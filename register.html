@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s2.googleusercontent.com/s2/favicons?domain=https://www.wikipedia.org/"
+    />
+  </head>
+  <body>
+    <form method="">
+      <h1>Registration Form</h1>
+      <!-- For label and it's particular input element id should be same -->
+      <!-- User name, email, pass -->
+      <fieldset>
+        <legend>Account details</legend>
+        <label for="username">User name</label> <br />
+        <input type="text" name="username" id="username" /><br />
+        <label for="email">Email</label> <br />
+        <input type="email" name="email" id="email" /> <br />
+        <label for="password">Password</label><br />
+        <input type="password" name="password" id="password" /><br />
+      </fieldset>
+
+      <h4>Personal Info</h4>
+      <!-- Date -->
+      <label for="birthdate">Birthdate</label><br />
+      <input type="date" name="birthdate" id="birthdate" /> <br />
+      <!-- Number -->
+      <label for="age">Age in years</label><br />
+      <input type="number" name="age" id="age" /> <br />
+      <!-- radio -->
+      <!-- For radio buttons - Name combine them together -->
+      <label for="gender">Gender</label> <br />
+      <input type="radio" name="gender" value="female" id="gender" />
+      <label for="gender"> Female </label> <br />
+      <input type="radio" name="gender" value="male" id="gender" />
+      <label for="gender"> Male </label> <br />
+      <input type="radio" name="gender" value="other" id="gender" />
+      <label for="gender"> Other </label> <br />
+      <!-- text area -->
+      <label for="textarea">Tell us about yourself</label> <br />
+      <textarea name="textarea" id="" cols="20" rows="5"></textarea> <br />
+      <!-- Select -->
+      <label for="fav_language"> What is your favourite language </label> <br />
+      <select name="fav_language" id="">
+        <option value="Javascript">Javascript</option>
+        <option value="python">python</option>
+        <option value="C">C</option>
+      </select>
+      <br />
+      <!-- datalist -->
+      <label for="location"> Where do you live</label>
+      <input list="locations" name="location" id="location" />
+      <datalist id="locations">
+        <option value="Earth"></option>
+        <option value="Jupiter"></option>
+        <option value="Mars"></option>
+        <option value="Moon"></option>
+        <option value="Venus"></option>
+      </datalist>
+      <br />
+      <hr />
+      <!-- checkbox -->
+      <input type="checkbox" name="agree" />
+      <label for="agree">I agree privacy policy</label><br />
+
+      <input type="submit" value="Register" /><br />
+    </form>
+    <a href="./index.html"> Already registered? Login </a>
+  </body>
+</html>
